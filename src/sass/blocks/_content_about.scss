@@ -1,0 +1,59 @@
+.content-about {
+    margin-top: 120px;
+    // height: 600px;
+    display: grid;
+    grid-template-columns: repeat(2,minmax(400px/570px, 400px/570px));
+    grid-template-rows: repeat(2,minmax(300px,300px));
+    column-gap: 70px;
+    grid-template-areas:
+    "imag textblock"
+    "imag points";
+
+    &_img{
+        grid-area: imag;
+        width: 400px;
+        height: 100%;
+        object-fit: cover;
+        background: url('../img/my_photo.jpg') no-repeat 25% / cover;
+    }
+}
+.content-about_text{
+    width: 570px;
+    height: 42%;
+    grid-area: textblock;
+}
+.size_between{
+    margin-top: 6px;
+    margin-bottom: 24px;
+    position: relative;
+    @include under_line (60px,0);
+   
+}
+
+.about-text__points{
+    width: 570px;
+    display: grid;
+    grid-area: points;
+    grid-template-columns: repeat(4,minmax(auto, auto));
+    grid-template-rows: repeat(2,minmax(116px,auto));
+   
+    
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-areas: 
+    "iconweb web appsweb apps"
+    "uxnweb ux . .";
+    .points{
+        min-width: 200px;
+    }
+    .web{
+        grid-area: web;
+    }
+    .ux{
+        grid-area: ux;
+    }
+    .apps{
+        grid-area: apps;
+    }
+    
+}

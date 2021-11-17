@@ -1,0 +1,37 @@
+.price {
+    margin: 0 auto;
+    width: 1040px;
+    display: grid;
+    grid-template-columns: repeat(2, 372px);
+    grid-template-rows: repeat(3, 22px);
+    column-gap: 307px;
+    row-gap: 30px;
+    &__item{
+        display: grid;
+        width: 366px;
+        grid-template-columns: repeat(3, auto \ auto \ 112px);
+        grid-template-rows: repeat(2, 22px);
+
+        grid-template-areas: 
+        "names names costs"
+        "desc desc desc";
+        .name{grid-area: names;}
+        .costs{grid-area: costs; min-width: 114px; text-align: right;}
+        .desc{grid-area: desc;}
+        .names{
+            position: relative;
+            &::before{
+            content: "";
+            width: 15px;
+            height: 15px;
+            background: $main-color;
+            position: absolute;
+            border-radius: 100%;
+            z-index: -1;
+            left: -22px;
+            top: 3px;
+        }
+        }
+        
+    }
+}

@@ -1,0 +1,22 @@
+.icons{
+    position: relative;
+    padding-top: 15px;
+    padding-left: 15px;
+    &__web{
+        grid-area: iconweb;
+        @include circle (0,0);
+    }
+    &__ux{
+        grid-area: uxnweb;
+        @include circle (0,0);
+    }
+    &__apps{
+        grid-area: appsweb;
+        @include circle(0,0);
+        margin-left: 30px;
+    }
+    &__diplom{
+        grid-area: diplom;
+        @include circle(0,0);
+    }
+}

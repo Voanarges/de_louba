@@ -1,0 +1,49 @@
+@import 'libs/bootstrap-reboot.min';
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+
+@import 'base/variables';
+@import 'base/mixins';
+@import 'blocks/head';
+@import 'blocks/title';
+@import 'blocks/buttons';
+@import 'blocks/sidepanel';
+@import 'blocks/menu';
+@import 'blocks/content_about';
+@import 'blocks/wrapper';
+@import 'blocks/benefit';
+@import 'blocks/icons';
+@import 'blocks/custom-title';
+@import 'blocks/skills';
+@import 'blocks/myworks';
+@import 'blocks/price';
+@import 'blocks/contact';
+@import 'blocks/policy';
+@import 'blocks/media';
+* {
+    // font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.status{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 13px;
+    line-height: 21px;
+    font-weight: 700;
+    text-align: left;
+    color: red;
+    width: 100%;
+    height: 45px;
+    background-color: white;
+}
+
+// .container {
+//     width: 1140px;
+//     margin: 0 auto;
+// }
+

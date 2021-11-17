@@ -1,0 +1,21 @@
+.sidePanel {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    height: 340px;
+    flex-direction: column;
+    z-index: 3;
+    top: 230px;
+    left: 50px;
+    align-items: center;
+    .sidePanel__diveder{
+        width: 2px;
+        height: 70px;
+        background-color: black;
+    }
+    .sidePanel__text{
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+    }
+    .sidePanel__link:hover{opacity: 0.5;}
+}

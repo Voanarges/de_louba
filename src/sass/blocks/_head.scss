@@ -1,0 +1,29 @@
+.head {
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    // background: url('../img/main_bg.jpg') no-repeat 50%/cover;
+    background-color: #bee7fb;
+    background-image: url('../img/author.jpg') no-repeat 50%/cover;
+    padding-top: 30vh;
+    padding-left: 15vw;
+    
+    .title-block{
+        width: 535px;
+        margin-top: 10px;
+    }
+    .buttons-link{
+        margin-top: 25px;
+        text-decoration: none;
+        color: black;
+    }
+    .head-container__buttons {
+        display: flex;
+        width: 260px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+}

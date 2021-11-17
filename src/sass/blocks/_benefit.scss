@@ -1,0 +1,96 @@
+.benefit{
+    width: 100%;
+    height: 459px;
+    p{
+        text-align: center;
+    }
+
+}
+.benefit__content {
+    width: 986px;
+    margin: 0 auto;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2,425px);
+    grid-template-rows: repeat(1, auto);
+    column-gap: 136px;
+
+    
+}
+.benefit-blocks{
+    padding-left: 43px;
+    display: grid;
+    grid-template-columns: repeat(1,425px);
+    grid-template-rows: repeat(2, auto);
+    row-gap: 30px;
+    position: relative;
+    
+    .title_size_20{
+        text-align: left;
+    }
+    & p.title_size_20::before{
+        //круг слева от блока
+        content: "";
+        width: 15px;
+        height: 15px;
+        background: $main-color;
+        position: absolute;
+        border-radius: 100%;
+        z-index: -1;
+        left: -8px;
+        top: 10px;
+    }
+    &__icon_title{
+        display: grid;
+        grid-template-columns: repeat(2, 39px 336px);
+        grid-template-rows: repeat(5, auto);
+        column-gap: 18.5px;
+        row-gap: 12px;
+        .icons{
+            grid-column: 1 / 2;
+            grid-row: 1 / 1;
+        }
+        .blocks_under__title{
+            
+            grid-column: 2 / 3;
+            grid-row: 1 / 1;
+            & p {
+                text-align: left;
+                padding: 0px;
+                margin: 0;
+            }
+        }
+       .title_size_12{
+            grid-column: 1 / 3;
+            grid-row: 2 / 2;
+            text-align: left;
+       }
+    }
+    &::before{
+        //вертиальная линия слева от блока
+        content: '';
+        height: 440px;
+        width: 1px;
+        background-color: black;
+        position: absolute;
+        top: 25px;
+        left: -1px;
+        z-index: -3;
+    }
+    .blocks_under__title{
+        position: relative;
+        //горизонтальная линия слева от блока
+        &::before{
+        content: '';
+        height: 1px;
+        width: 43px;
+        background-color: black;
+        position: absolute;
+        top: 17.5px;
+        left: -99.5px;
+        z-index: 2;
+    }
+    }
+    
+
+}

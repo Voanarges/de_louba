@@ -1,0 +1,17 @@
+.custom-title{
+    margin-top: 120px;
+    margin-bottom: 60px;
+    text-align: center;
+    p.title_size_16{
+        position: relative;
+        @include circle(48.5%,-5px);
+    }
+    p.title_size_36{
+        @include under_line (75px,540px);
+        position: relative;
+    }
+    .extra-line{
+        position: relative;
+        @include under_line (60px,540px);
+    }
+}

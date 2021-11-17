@@ -1,0 +1,63 @@
+.myworks{
+    margin: 0 auto;
+    height: 565px;
+    box-sizing: border-box;
+    width: 1151px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(280px,auto));
+    grid-template-rows: repeat(2, minmax(280px,auto));
+    gap: 1px;
+    grid-template-areas: 
+    "uber pulse bread plans"
+    "ipad mac mac plans";
+  
+    .uber{grid-area: uber;}
+    .pulse {grid-area: pulse;transform: translate(3px); }
+    .bread{grid-area: bread;}
+    .plans{grid-area: plans;}
+    .ipad{grid-area: ipad;}
+    .mac{grid-area: mac; transform: translate(3px);}
+    // & a:hover{
+    //     transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    //     opacity: 0.5;
+    // }
+    a {
+       position: relative;
+        z-index: 1; 
+        display: flex;
+        place-content: center;
+        overflow: hidden;
+    }
+    &__fon {
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        background-color: white;  
+        z-index: 2;
+        opacity: 0.5;
+        transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    &__description {
+        position: absolute;
+        bottom: -17px;
+        left: 0;
+        z-index: 9;
+        height: 80px;
+        width: 100%;
+        padding: 20px;
+        text-align: left;
+        display: flex;
+        justify-content: center;
+        color: white;
+        background-color: black;
+        opacity: 0.7;
+        display: none;
+        transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    }
+    
+}

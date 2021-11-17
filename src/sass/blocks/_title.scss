@@ -1,0 +1,70 @@
+.title{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    // font-size: 36px;
+    // line-height: 60px;
+}
+.title_size_14 {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 500;
+}
+//в 12м установлено 13px!!!
+.title_size_12 {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 500;
+}
+.title_size_13_bold {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 700;
+}
+.title_size_14_bold {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    &mrg{ margin-top: 20px;}
+}
+
+.title_size_16 {
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    @include circle(-15px, -5px)
+}
+.title_size_20 {
+    font-size: 20px;
+    line-height: 30px;
+}
+.title_size_36 {
+    font-size: 36px;
+    line-height: 60px;
+    position: relative;
+    @include under_line(50px, 1px);
+}
+.title_size_48 {
+    font-size: 48px;
+}
+.title_circle {
+    position: relative;
+    padding-left: 10px;
+    z-index: 2;
+    @include before_circle;
+    &__padding15 {
+        padding-left: 15px;
+    }
+   
+}
+.title_size_20__policy{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    &.policy_just{
+        text-align: center;
+    }
+}
+.mobile{
+    margin-top: 50px;
+}

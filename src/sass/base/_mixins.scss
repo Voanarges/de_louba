@@ -1,0 +1,54 @@
+@mixin before_circle {
+    &:before{
+        content: "";
+        width: 36px;
+        height: 36px;
+        background: $main-color;
+        position: absolute;
+        border-radius: 100%;
+        z-index: -1;
+        top: -25%;
+        left: 0;
+    }
+    
+}
+@mixin circle ($any,$name){
+    &:before{
+        content: "";
+        width: 36px;
+        height: 36px;
+        background: $main-color;
+        position: absolute;
+        border-radius: 100%;
+        z-index: -1;
+        left: $any;
+        top: $name;
+    }
+}
+@mixin icons{
+    &:after{
+      content: "";
+        width: 36px;
+        height: 36px;
+        background: red;
+        position: absolute;
+        border-radius: 100%;
+        z-index: 2;
+        left:18;
+        top:24px;  
+    }
+    
+    
+}
+@mixin under_line ($any,$name) {
+    &::after{
+        content: '';
+        position: absolute;
+        top: $any;
+        left: $name;
+        width: 60px;
+        height: 0px;
+        border: 1.5px solid $main-color;
+        background: $main-color;
+    }
+}
