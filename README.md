@@ -4,7 +4,7 @@
 --исходники расположены в папке src 
 --в дистрибутиве представлен уже сжатый код (для оптимизации скорости загрузки)
 
-!!!IMORTANT!!!
+!!!IMPORTANT!!!
 it's my portfolio website 
 !!!!the sources are located in the 'src' folder
 --the distribution contains already compressed code (to optimize the download speed)
